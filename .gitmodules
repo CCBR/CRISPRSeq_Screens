@@ -1,6 +1,0 @@
-[submodule "resources/bagel"]
-	path = resources/bagel
-	url = https://github.com/hart-lab/bagel
-[submodule "resources/drugz"]
-	path = resources/drugz
-	url = https://github.com/hart-lab/drugz
