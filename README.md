@@ -107,11 +107,11 @@ The output files generated include `<output_label>.gene_summary.txt` and `<outpu
 MAGeCK can use a maximum likelihood estimation (MLE) model to determine how essential genes are for a survival study. This code uses a raw counts file, which can also be a comma-separated value (CSV) file, and a design matrix file. A sample design matrix file is shown here:
 
 ```
-Samples		baseline	HL60_HAEMATOPOIETIC_LYMPHOID_TISSUE	KBM7
-HL60.initial	1		0							0
-KBM7.initial	1 		0							0
-HL60.final		1		1							0
-KBM7.final		1		0							1
+Samples       baseline  HL60_HAEMATOPOIETIC_LYMPHOID_TISSUE KBM7
+HL60.Initial  1         0                                   0
+KBM7.initial  1         0                                   0
+HL60.final    1         1                                   0
+KBM7.final    1         0                                   1
 ```
 
 The baseline needs to be set at 1 for all samples. Each sample then has a single baseline and a flag for a different stage to be evaluated against the baseline.
