@@ -221,16 +221,16 @@ python drugz.py -i <countsFile> -r <genesToRemove> -c <controlLabels> -x <experi
 The counts file can contain multiple replicates and can indicate paired (default) or unpaired experiments (addressed by using the `--paired` flag with TRUE or FALSE). A sample file is shown here (with the header row flowing to the next line):
 
 ```
-sgRNA	Gene	T0	T15_A_control	T15_B_control	T15_C_control	T15_A_olaparib	T15_B_olaparib	T15_C_olaparib
-A1BG_CACCTTCGAGCTGCTGCGCG	A1BG	313	235	47	337	428	115	340
-A1BG_AAGAGCGCCTCGGTCCCAGC	A1BG	99	8	1	13	26	5	28
-A1BG_TGGACTTCCAGCTACGGCGC	A1BG	650	336	74	185	392	193	304
-A1BG_CACTGGCGCCATCGAGAGCC	A1BG	718	192	34	296	178	69	185
-A1BG_GCTCGGGCTTGTCCACAGGA	A1BG	180	230	29	122	394	148	364
-A1BG_CAAGAGAAAGACCACGAGCA	A1BG	428	300	158	294	366	184	489
-A1CF_CGTGGCTATTTGGCATACAC	A1CF	677	452	74	423	585	446	434
-A1CF_GGTATACTCTCCTTGCAGCA	A1CF	138	69	43	109	96	184	127
-A1CF_GACATGGTATTGCAGTAGAC	A1CF	396	183	38	106	193	120	198
+sgRNA                     Gene  T0  T15_A_control T15_B_control T15_C_control T15_A_olaparib  T15_B_olaparib  T15_C_olaparib
+A1BG_CACCTTCGAGCTGCTGCGCG A1BG  313 235            47           337           428             115             340
+A1BG_AAGAGCGCCTCGGTCCCAGC A1BG  99  8              1            13            26              5               28
+A1BG_TGGACTTCCAGCTACGGCGC A1BG  650 336            74           185           392             193             304
+A1BG_CACTGGCGCCATCGAGAGCC A1BG  718 192            34           296           178             69              185
+A1BG_GCTCGGGCTTGTCCACAGGA A1BG  180 230            29           122           394             148             364
+A1BG_CAAGAGAAAGACCACGAGCA A1BG  428 300            158          294           366             184             489
+A1CF_CGTGGCTATTTGGCATACAC A1CF  677 452            74           423           585             446             434
+A1CF_GGTATACTCTCCTTGCAGCA A1CF  138 69             43           109           96              184             127
+A1CF_GACATGGTATTGCAGTAGAC A1CF  396 183            38           106           193             120             198
 ```
 
 The genes to remove, as shown in the example in the tutorial, include LacZ, luciferase, and EGFR and are input as comma-separated list (e.g. `LacZ,luciferase,EGFR`). The controls and experimental samples should match the column headers and be input as a comma separated list as well (e.g. `-c T15_A_control,T15_B_control,T15_C_control`). The half_window_size is the width of the variance window (how many sgRNAs used to calculate variance at any given time) and is set at a default value of 500, but can be adjusted to match dataset size; the recommendation is to make this value the “size of the first bin and half the size of the initial window.”  There is also the option to include a fold change text file, if desired.
