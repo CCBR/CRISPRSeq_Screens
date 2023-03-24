@@ -81,15 +81,16 @@ This step can be run from a counts file, as long as the counts file matches the 
 
 ```
 sgRNA		Gene		LX	CTRL
-s_47512	    RNF111	    1	0
-s_24835	    HCFC1R1	    1	0
-s_14784	    CYP4B1	    4	0
-s_51146	    SLC18A1	    1	0
-s_58960	    TRIM5		1	0
-s_48256	    RPRD2		1	0
-s_30297	    KRTAP5-5	1	0
-s_14555	    CYB5B		1	0
-s_39959	    PAAF1		1	1
+s_47512	RNF111	1	0
+s_24835	HCFC1R1	1	0
+s_14784	CYP4B1	4	0
+s_51146	SLC18A1	1	0
+s_58960	TRIM5		1	0
+s_48256	RPRD2		1	0
+s_30297	KRTAP5-5	1	0
+s_14555	CYB5B		1	0
+s_39959	PAAF1		1	1
+
 ```
 
 After identifying the counts file, run the command: 
