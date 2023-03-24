@@ -80,8 +80,8 @@ The outputs will be contained in the current working directory unless a differen
 This step can be run from a counts file, as long as the counts file matches the output format from the previous alignment step, which is typically a tab-delimited text format with sgRNA, gene, and sample labels. Example:
 
 ```
-sgRNA		Gene		LX	CTRL
-s_47512	    RNF111	1	0
+sgRNA       Gene		LX	CTRL
+s_47512     RNF111	1	0
 s_24835	    HCFC1R1	1	0
 s_14784	    CYP4B1	4	0
 s_51146	    SLC18A1	1	0
